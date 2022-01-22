@@ -220,7 +220,7 @@ class Core extends CI_Controller {
                     $this->session->set_flashdata('success', 'Hasil perhitungan berdasarkan inputan kamu udh selesai');
                     $this->load->view('user/partials_/header');
                     $this->load->view('user/peserta/css_hasil_rasionalisasi');
-                    $this->load->view('user/peserta/hasil_rasionalisasi', $data);
+                    $this->load->view('user/peserta/hasil_rasionalisasi_lite', $data); //Full Page change hasil_rasionalisasi
                     $this->load->view('user/partials_/footer');
                 } else {
                     $this->session->set_flashdata('info', 'Kesalahan sistem saat menyimpan data, atau silahkan refresh halaman ini');
